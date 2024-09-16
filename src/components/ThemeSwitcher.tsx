@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import styled, { ThemeProvider } from 'styled-components';
+import React from 'react';
+import styled from 'styled-components';
 
 // Define the type for the theme prop
 interface Theme {
@@ -12,8 +12,8 @@ interface ThemeSwitcherProps {
 }
 
 const ToggleButton = styled.button`
-  background-color: ${(props) => props.theme.theme == 'light' ? 'white' :'black'};
-  color: ${(props) => props.theme.theme == 'light' ? 'black' :'white'};
+  background-color: ${(props) => props.theme.theme === 'light' ? 'white' :'black'};
+  color: ${(props) => props.theme.theme === 'light' ? 'black' :'white'};
   padding: 10px 30px;
   border: none;
   cursor: pointer;
